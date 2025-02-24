@@ -100,7 +100,6 @@ int main(void)
   initTimer3();
   initTimer2();
   /* USER CODE BEGIN 2 */
-//  LL_TIM_DisableCounter(TIM3);
 
   /* USER CODE END 2 */
 
