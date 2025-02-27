@@ -15,6 +15,7 @@
   *
   ******************************************************************************
   */
+#include "modulated_uart.h"
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
@@ -22,7 +23,7 @@
 #include "stm32f4xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "modulated_uart.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -205,7 +206,7 @@ void SysTick_Handler(void)
 void TIM2_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM2_IRQn 0 */
-    void irgHandlerTim2();
+	irqHandlerTim2();
   /* USER CODE END TIM2_IRQn 0 */
   /* USER CODE BEGIN TIM2_IRQn 1 */
 

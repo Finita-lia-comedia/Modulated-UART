@@ -1,9 +1,5 @@
 #include "modulated_uart.h"
 
-extern uint8_t g_txData;
-extern uint8_t g_bitIndex;
-extern uint8_t g_txBusy;
-
 void irqHandlerTim2(void) {
     if (LL_TIM_IsActiveFlag_UPDATE(TIM2))
     {
